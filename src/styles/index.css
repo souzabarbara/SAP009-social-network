@@ -1,0 +1,135 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    background: #E2C5C5;
+}
+
+main {
+    display: flex;
+    align-items: center; 
+    height: 100vh;
+    }
+
+.login-container {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    }
+
+    form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.login-box {
+    background-color: #ffffff;
+    width: 400px;
+    height: 530px;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #AFCFCC;
+    font-size: 22px;
+    box-shadow: 0px 3px 29px -11px rgba(0,0,0,0.41);
+    }
+
+.box-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #E94C42;
+    padding: 40px 30px 20px;
+    }
+
+input {
+    box-sizing: border-box;
+    height: 61px;
+    width: 350px;
+    border: 2px solid #AFCFCC;
+    border-radius: 20px;
+    display: block;
+    margin: 20px 0px;
+    font-size: 20px;
+    color: #AFCFCC;
+    padding: 20px;
+    }
+
+input::placeholder {
+    color: #AFCFCC;   
+  }
+
+
+input:focus {
+    outline: none;
+    border-color: #008770;
+  }
+  
+button {
+    box-sizing: border-box;
+    background-color: #008770;
+    height: 61px;
+    width: 200px;
+    border: 2px solid #008770;
+    border-radius: 20px;
+    display: block;
+    margin: 25px 0px 20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+button:focus {
+    outline: none;
+    border-color: #AFCFCC;
+  }
+
+  .no-count {
+    margin: 20px 0 0;
+  }
+
+  .creat-count {
+    color: #FC9F9D;
+  }
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 100px;
+ }
+
+.title {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    color: #E94C42;
+    margin-bottom: 50px;
+}
+
+.description {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    word-break: break-word;
+    text-align: center;
+    color: #008770;
+    
+}
+
+img {
+    height: 498px;
+    width: 777px;
+    
+
+}
