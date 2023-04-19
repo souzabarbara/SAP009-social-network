@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Self Love Club</title>
+  <script type="module" src="/js/index.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +22,9 @@
       <div class="login-box">
         <h2 class="box-title">Login</h2>
         <form>
-          <input type="text" id="signin-email" placeholder="E-mail">
+          <input type="email" id="signin-email" placeholder="E-mail">
           <input type="password" id="signin-password" placeholder="Senha">
-          <button class="primary-button" type="submit">Entrar</button>
+          <button class="primary-button" type="submit" id="signin-button">Entrar</button>
         </form>
         <p class="no-account">Não tem uma conta ainda?</p>
         <button class="create-account">Crie agora</button>
@@ -50,11 +51,10 @@
         <form>
           <input type="text" id="signup-email" placeholder="E-mail">
           <input type="password" id="signup-password" placeholder="Senha">
-          <button class="primary-button" type="submit">Criar conta</button>
+          <button class="primary-button" id="signup-button" type="submit">Criar conta</button>
       </div>
     </div>
   </main>
-  <script type="module" src="/js/index.js"></script>
   <script type="module" src="/js/modal.js"></script>
 </body>
 

@@ -20,13 +20,13 @@ main {
     width: auto;
     height: 100vh;
     padding: 30px 60px;
-    font-size: 30px;
-    color: #008770;
+    font-size: 20px;
+    color: #gray;
     flex: 0 0 auto;
 }
 
 .nav-title {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .sidebar-menu {
@@ -43,8 +43,17 @@ main {
     gap: 5px;
 }
 
-.margin-0 {
+.timeline-button {
     margin: 0;
+    height: 41px;
+    width: 120px;
+}
+
+.out-button {
+    border: 0;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .timeline {
@@ -53,7 +62,7 @@ main {
 
 .timeline-title {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
     color: rgba(0, 0, 0, 0.73);
     padding: 30px 100px;
 }

@@ -1,37 +1,60 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { login, createUser } from './firebase.js';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    apiKey: "AIzaSyCAOq0oXzTygkodYVguAql_Fwoylf_qAQo",
-    authDomain: "self-love-club-network.firebaseapp.com",
-    projectId: "self-love-club-network",
-    storageBucket: "self-love-club-network.appspot.com",
-    messagingSenderId: "283912470252",
-    appId: "1:283912470252:web:621d6b6b4e9dbc8c4cafc9",
-    measurementId: "G-HN9CNDDHH7"
-};
+const btnSignIn = document.getElementById('signin-button');
+btnSignIn.addEventListener('click', (event) => {
+    event.preventDefault();
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+    const emailInputValue = document.getElementById('signin-email').value;
+    const passwordlInputValue = document.getElementById('signin-password').value;
 
-const email = "babisouza0704@gmail.com"
-const password = "senha123"
+    login(emailInputValue, passwordlInputValue)
+        .then((userCredential) => {
+            // Signed in
+            const user = userCredential.user;
+            console.log("login efetuado com sucesso")
+            // ...
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorMessage)
+        });
+})
+
+const btnSignUp = document.getElementById('signup-button');
+btnSignUp.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const emailInputValue = document.getElementById('signup-email').value;
+    const passwordlInputValue = document.getElementById('signup-password').value;
+
+    createUser(emailInputValue, passwordlInputValue)
+        .then((userCredential) => {
+            // Signed in
+            const user = userCredential.user;
+            console.log("login efetuado com sucesso")
+            // ...
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorMessage)
+        });
+})
+
 const auth = getAuth();
-signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        // User is signed in, see docs for a list of available properties
+        // https://firebase.google.com/docs/reference/js/firebase.User
+        const uid = user.uid;
         console.log(user)
+        window.location.replace("feed.html")
         // ...
-    })
-    .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-    });
+    } else {
+        // User is signed out
+        // ...
+    }
+});
+
