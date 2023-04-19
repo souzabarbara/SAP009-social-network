@@ -1,0 +1,46 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+  
+a:visited {
+    color: inherit; 
+}
+
+.title {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    color: #E94C42;
+    margin-bottom: 50px;
+}
+
+.primary-button {
+    box-sizing: border-box;
+    background-color: #008770;
+    height: 61px;
+    width: 200px;
+    border: 2px solid #008770;
+    border-radius: 20px;
+    display: block;
+    margin: 25px 0px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 20px;
+    transition: 0.4s;
+}
+ .primary-button:focus {
+    outline: none;
+    border-color: #AFCFCC;
+  }
+
+
