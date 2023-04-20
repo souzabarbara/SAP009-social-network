@@ -1,5 +1,7 @@
 body {
-    background: #E2C5C5;
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
