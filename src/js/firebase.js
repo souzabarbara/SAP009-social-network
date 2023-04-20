@@ -1,9 +1,10 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth, 
-    signInWithEmailAndPassword, 
-    setPersistence, 
-    browserSessionPersistence, 
+import {
+    getAuth,
+    signInWithEmailAndPassword,
+    setPersistence,
+    browserSessionPersistence,
     createUserWithEmailAndPassword
 } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -31,9 +32,12 @@ export function login(email, password) {
         return signInWithEmailAndPassword(auth, email, password)
     })
         .catch((error) => {
-            // Handle Errors here.
             const errorCode = error.code;
-            const errorMessage = error.message;
+            if (errorCode === 'auth/wrong-password' || errorCode === 'auth/user-not-found') {
+                throw new Error('Invalid email or password')
+            } else {
+                throw error
+            }
         });
 }
 
