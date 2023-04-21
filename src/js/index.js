@@ -13,7 +13,7 @@ btnSignIn.addEventListener('click', (event) => {
             // Signed in
             const user = userCredential.user;
             console.log("login efetuado com sucesso")
-            // ...
+                // ...
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -34,7 +34,7 @@ btnSignUp.addEventListener('click', (event) => {
             // Signed in
             const user = userCredential.user;
             console.log("login efetuado com sucesso")
-            // ...
+                // ...
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -51,10 +51,9 @@ onAuthStateChanged(auth, (user) => {
         const uid = user.uid;
         console.log(user)
         window.location.replace("feed.html")
-        // ...
+            // ...
     } else {
         // User is signed out
         // ...
     }
 });
-

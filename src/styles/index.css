@@ -1,27 +1,27 @@
 body {
-  background-image: url("/images/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("/images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
     display: flex;
-    align-items: center; 
+    align-items: center;
     height: 100vh;
-    }
+}
 
 .login-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 100px;
-    }
+}
 
-    form {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
+}
 
 .login-box {
     background-color: #ffffff;
@@ -33,8 +33,8 @@ main {
     align-items: center;
     color: #AFCFCC;
     font-size: 20px;
-    box-shadow: 0px 3px 29px -11px rgba(0,0,0,0.41);
-    }
+    box-shadow: 0px 3px 29px -11px rgba(0, 0, 0, 0.41);
+}
 
 .box-title {
     font-style: normal;
@@ -44,7 +44,7 @@ main {
     text-align: center;
     color: #E94C42;
     padding: 40px 30px 20px;
-    }
+}
 
 input {
     box-sizing: border-box;
@@ -57,37 +57,35 @@ input {
     font-size: 20px;
     color: #AFCFCC;
     padding: 20px;
-    }
+}
 
 input::placeholder {
-    color: #AFCFCC;   
-  }
-
+    color: #AFCFCC;
+}
 
 input:focus {
     outline: none;
     border-color: #008770;
-  }
-  
-  .no-account {
-    margin: 20px 0 0;
-  }
+}
 
-  .create-account {
+.no-account {
+    margin: 20px 0 0;
+}
+
+.create-account {
     border: 0;
     background: transparent;
     font-size: 20px;
     font-weight: bold;
     color: #FC9F9D;
-  }
+}
 
-  .modal-header {
-      display: flex;
-      justify-content: space-around;
-  }
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+}
 
-
-  .close-modal {
+.close-modal {
     display: flex;
     align-items: center;
     border: 0;
@@ -97,10 +95,9 @@ input:focus {
     cursor: pointer;
     opacity: 0.8;
     font-size: 20px;
-    
-    }
+}
 
-  .fade {
+.fade {
     position: fixed;
     top: 0;
     left: 0;
@@ -108,9 +105,9 @@ input:focus {
     height: 100%;
     background-color: rgba(226, 197, 197, 0.5);
     z-index: 5;
-  }
+}
 
-  .modal {
+.modal {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -121,34 +118,31 @@ input:focus {
     border-radius: 70px;
     color: #AFCFCC;
     font-size: 20px;
-    box-shadow: 0px 3px 29px -11px rgba(0,0,0,0.41);
+    box-shadow: 0px 3px 29px -11px rgba(0, 0, 0, 0.41);
     z-index: 10;
     padding-bottom: 30px;
-    }
+}
 
+.modal-body p {
+    margin-bottom: 1rem;
+}
 
-    .modal-body p {
-        margin-bottom: 1rem;
-      }
-      
-      .modal.hide,
-      .fade.hide {
-        opacity: 0;
-        pointer-events: none;
-      }
-      
-      .modal.hide {
-        top: 0;
-      }
-    
+.modal.hide,
+.fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal.hide {
+    top: 0;
+}
 
 .about {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-right: 100px;
- }
-
+}
 
 .description {
     box-sizing: border-box;
@@ -159,12 +153,9 @@ input:focus {
     word-break: break-word;
     text-align: center;
     color: #008770;
-    
 }
 
 img {
     height: 498px;
     width: 777px;
-    
-
 }

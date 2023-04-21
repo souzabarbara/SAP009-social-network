@@ -1,5 +1,5 @@
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
@@ -9,9 +9,9 @@ a {
     text-decoration: inherit;
     color: inherit;
 }
-  
+
 a:visited {
-    color: inherit; 
+    color: inherit;
 }
 
 .title {
@@ -38,9 +38,8 @@ a:visited {
     font-size: 20px;
     transition: 0.4s;
 }
- .primary-button:focus {
+
+.primary-button:focus {
     outline: none;
     border-color: #AFCFCC;
-  }
-
-
+}

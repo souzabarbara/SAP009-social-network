@@ -20,9 +20,9 @@ function logOut() {
     const auth = getAuth();
     signOut(auth).then(() => {
         window.location.replace("index.html")
-      }, (error) => {
+    }, (error) => {
         // An error happened.
-      });
+    });
 }
 
-outButton.addEventListener ('click', logOut);
+outButton.addEventListener('click', logOut);

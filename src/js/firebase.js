@@ -29,8 +29,8 @@ const auth = getAuth();
 
 export function login(email, password) {
     return setPersistence(auth, browserSessionPersistence).then(() => {
-        return signInWithEmailAndPassword(auth, email, password)
-    })
+            return signInWithEmailAndPassword(auth, email, password)
+        })
         .catch((error) => {
             const errorCode = error.code;
             if (errorCode === 'auth/wrong-password' || errorCode === 'auth/user-not-found') {
