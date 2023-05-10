@@ -78,6 +78,7 @@ input:focus {
     font-size: 20px;
     font-weight: bold;
     color: #FC9F9D;
+    cursor: pointer;
 }
 
 .modal-header {
@@ -155,7 +156,43 @@ input:focus {
     color: #008770;
 }
 
-img {
+.description-image {
     height: 498px;
     width: 777px;
+    display: block;
+}
+
+@media only screen and (max-width: 1300px) {
+    .description {
+        display: none;
+    }
+    .description-image {
+        display: none;
+    }
+    .about {
+        padding-right: 0;
+    }
+    main {
+        flex-direction: column-reverse;
+        padding-bottom: 20px;
+    }
+    .title {
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+    .login-container {
+        padding: 0;
+    }
+    .login-box {
+        width: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    input {
+        width: auto;
+    }
+    .modal {
+        width: auto;
+        padding: 20px;
+    }
 }

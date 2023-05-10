@@ -36,7 +36,6 @@ a:visited {
     cursor: pointer;
     opacity: 0.8;
     font-size: 20px;
-    transition: 0.4s;
 }
 
 .primary-button:focus {
