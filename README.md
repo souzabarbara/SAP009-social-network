@@ -54,7 +54,14 @@ Primeiro, criei o Protótipo de Baixa Fidelidade na plataforma [Miro](https://mi
 
 ![protótipo-de-baixa-fidelidade-2](src/images/prototipo-de-baixa-fidelidade2-slc.png)
 ### 4.2 Protótipo de Alta Fidelidade
-![]()
+
+- Página de Login
+
+![protótipo-de-alta-fidelidade-login](src/images/prototipo-index.png)
+
+- Timeline
+
+![protótipo-de-alta-fidelidade-feed](src/images/prototipo-feed.png)
 ## 5. Acesso ao Projeto
 Você pode acessar o projeto clicando aqui.
 
@@ -76,7 +83,7 @@ Você pode acessar o projeto clicando aqui.
  -  [x]  Ser uma SPA.
 -   [x] Ser  _responsivo_.
 -   [x] Receber  _code review_  de pelo menos uma parceira de outra equipe.
--   [] Fazer  _tests_  unitários.
--   [] Fazer testes manuais buscando erros e imperfeições simples.
--   [] Fazer testes de usabilidade e incorporar o  _feedback_  dos usuários como melhorias.
--   [] Fazer deploy do aplicativo e marcar a versão (git tag)
+-   [x] Fazer  _tests_  unitários.
+-   [x] Fazer testes manuais buscando erros e imperfeições simples.
+-   [x] Fazer testes de usabilidade e incorporar o  _feedback_  dos usuários como melhorias.
+-   [x] Fazer deploy do aplicativo e marcar a versão (git tag)

@@ -124,7 +124,9 @@ export async function renderPosts() {
     results.forEach(renderPost);
 }
 
-if (document.querySelector(".out-button")) {
+const outButton = document.querySelector(".out-button")
+
+if (outButton) {
     // event delegation
     document.addEventListener('click', event => {
         const elementClassList = event.target.classList
@@ -135,9 +137,15 @@ if (document.querySelector(".out-button")) {
         if (elementClassList.contains('arrow-back-icon')) return hideMenu(event)
     });
 
-    document.querySelector(".out-button").addEventListener('click', signOutUser);
+    outButton.addEventListener('click', signOutUser);
 
-    document.querySelector("#publish-button").addEventListener('click', publishPost);
+    const publishButton = document.querySelector("#publish-button")
+    publishButton.addEventListener('click', publishPost);
+
+    const textarea = document.getElementById("textarea-publication");
+    textarea.addEventListener('keyup', () => {
+        publishButton.disabled = textarea.value.length === 0; // Habilita ou desabilita o botão
+    })
 
     document.querySelector(".user").innerHTML += formatUserName(currentUser().email)
 

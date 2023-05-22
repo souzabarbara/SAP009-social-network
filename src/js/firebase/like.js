@@ -13,15 +13,19 @@ import { app } from "./config.js"
 export const db = getFirestore(app);
 
 export async function getLike(postId, userId) {
-    const likesRef = collection(db, "likes")
-    const docSnap = await getDocs(query(likesRef,
-        where("post_id", "==", postId),
-        where("user_id", "==", userId)
-    ))
+    try {
+        const likesRef = collection(db, "likes")
+        const docSnap = await getDocs(query(likesRef,
+            where("post_id", "==", postId),
+            where("user_id", "==", userId)
+        ))
 
-    if (docSnap.empty) return null
+        if (docSnap.empty) return null
 
-    return docSnap.docs[0]
+        return docSnap.docs[0]
+    } catch (error) {
+        console.log("Cannot get like, error:" + error)
+    }
 }
 
 export async function createLike(postId, userId) {

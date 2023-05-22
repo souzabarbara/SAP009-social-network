@@ -30,6 +30,10 @@ const pages = {
     }
 }
 
+/**
+ * Carrega as paginas de index ou feed dinamicamente
+ * Caso o usuário esteja logado carrega o feed e seus arquivos, caso não carrega o index (login / registro)
+ */
 document.addEventListener("DOMContentLoaded", () => {
     const main = document.getElementById("root")
     let pageToLoaded = ''

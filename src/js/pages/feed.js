@@ -9,15 +9,6 @@ export default () => `
                     Início
                 </button>
             </li>
-            <li>
-                <a>
-                    <ion-icon name="information-circle-outline"></ion-icon>
-                    Sobre
-                </a>
-            </li>
-            <li>
-                <button class="primary-button timeline-button">Publicar</button>
-            </li>
         </ul>
         <button class="out-button">
             <ion-icon name="log-out-outline"></ion-icon> Sair
@@ -28,7 +19,7 @@ export default () => `
         <h1 class="timeline-title">Início</h1>
         <div class="timeline-text-publication">
             <textarea class="text-publication" id="textarea-publication" placeholder="O que gostaria de compartilhar?"></textarea>
-            <button class="primary-button timeline-button" id="publish-button">Publicar</button>
+            <button class="primary-button timeline-button" id="publish-button" disabled>Publicar</button>
             <div class="posts"></div>
         </div>
         </div>

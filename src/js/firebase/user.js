@@ -13,7 +13,7 @@ export const db = getFirestore(app);
 
 export const auth = getAuth();
 
-export async function login(email, password) {
+export function login(email, password) {
     return signInWithEmailAndPassword(auth, email, password)
 }
 
