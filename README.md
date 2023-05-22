@@ -48,11 +48,11 @@ Primeiro, criei o Protótipo de Baixa Fidelidade na plataforma [Miro](https://mi
 
 - Página de Login
 
-![prototipo-de-baixa-fidelidade-1](src/images/prototipo-de-baixa-fidalidade-slc.png)
+![prototipo-de-baixa-fidelidade-1](src/images/prototioo-baixa-fidelidade-index.png)
 
 - Timeline
 
-![protótipo-de-baixa-fidelidade-2](src/images/prototipo-de-baixa-fidelidade2-slc.png)
+![protótipo-de-baixa-fidelidade-2](src/images/prototipo-baixa-fidelidade-feed.png)
 ### 4.2 Protótipo de Alta Fidelidade
 
 - Página de Login
@@ -61,7 +61,7 @@ Primeiro, criei o Protótipo de Baixa Fidelidade na plataforma [Miro](https://mi
 
 - Timeline
 
-![protótipo-de-alta-fidelidade-feed](src/images/prototipo-feed.png)
+![protótipo-de-alta-fidelidade-feed](src/images/prototipo-alta-fidelidade-feed.png)
 ## 5. Acesso ao Projeto
 Você pode acessar o projeto clicando aqui.
 
