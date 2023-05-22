@@ -20,7 +20,7 @@ export default () => {
             <br>Aqui você encontra um lugar seguro e acolhedor para interagir com outras pessoas.
             <br> <b>Seja bem-vinde à nossa comunidade!</b>
         </h2>
-        <img src="/images/elus.png" alt="elus" class="description-image" />
+        <img src="./images/elus.png" alt="elus" class="description-image" />
     </div>
     <div class="fade hide"></div>
     <div class="modal hide">

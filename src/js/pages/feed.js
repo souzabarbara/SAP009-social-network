@@ -28,7 +28,7 @@ export default () => `
             <ion-icon name="person-outline"></ion-icon>
         </div>
         <figure>
-            <img src="/images/talk-love.svg" width="367" height="268" />
+            <img src="./images/talk-love.svg" width="367" height="268" />
         </figure>
         <div></div>
     </div>
